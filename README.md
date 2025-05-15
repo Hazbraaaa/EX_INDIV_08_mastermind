@@ -6,12 +6,12 @@
 
 ## 📌 À propos
 
-> Ce projet a été réalisé en solo dans le cadre d'une formation à Ada Tech School afin de s’amuser avec des tableauxe et tenter une interface graphique..
+> Ce projet a été réalisé en solo dans le cadre d'une formation à Ada Tech School afin de découvrir Python.
 
 ---
 
 ## ✅ Fonctionnalités
 
-- ✅ Utiliser les commandes de base de JS
+- ✅ Utiliser les commandes de base de Python
 - ✅ 
 - ✅ 
