@@ -8,12 +8,10 @@ codeToBreak = random.choices(colors, k = 2)
 
 # init functions
 
-def isAttemptCorrect(codeToBreak, codeAttempt):
-    if len(codeToBreak) != len(codeAttempt):
-        return False
+def is_attempt_correct(codeToBreak, codeAttempt):
     return all(codeAttempt[i] == codeToBreak[i] for i in range(len(codeToBreak)))
 
-def checkAnswer(codeAttempt, feedback):
+def check_answer(codeAttempt, feedback):
     secret = codeToBreak.copy()
     attempt = codeAttempt.copy()
 
@@ -33,11 +31,11 @@ def mastermind(codeToBreak):
         codeAttempt = []
         for x in range(len(codeToBreak)):
             codeAttempt.append(input(f"Couleur {x+1} : "))
-        if isAttemptCorrect(codeToBreak, codeAttempt):
+        if is_attempt_correct(codeToBreak, codeAttempt):
             print(f"Gagné\nCode: {codeToBreak}")
             return
         else:
-            result = checkAnswer(codeAttempt, feedback = [0, 0])
+            result = check_answer(codeAttempt, feedback = [0, 0])
             print(f"Resultat: {result}\n")
             print(f"Choix: {colors}")
     print(f"Perdu\nCode: {codeToBreak}")
